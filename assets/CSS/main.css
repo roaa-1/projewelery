@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+:root{
+    font-size: 20px;
+    --mainfont1: "Afacad", sans-serif;
+    --font2:"Ballet", cursive;
+}
+body{
+    overflow-x: hidden;
+    font-family: var(--mainfont1);
+    color: black;
+    height: 8000px;
+}
+.categories{
+    padding: 5.6rem 0;
+    overflow-x: scroll;
+}
+.title{
+    font-size:2.8rem;
+    font-weight: 500;
+    line-height: 3.35rem;
+
+}
+.pag{
+    font-size: 0.9rem;
+    color:rgb(95, 97, 94) ;
+    padding-bottom: 2rem;
+}
+.card{
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.categories .card img{
+    transition: transform 0.8s ease-in-out;
+}
+.categories .card:hover img{
+    transform: scale(1.1);
+}
+.categories .name{
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s; 
+}
+.name:hover{
+    color:rgb(200, 16, 46) ;
+}
+.categories .num{
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(95, 97, 94);
+}
+.categories {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+.categories-scroll{
+    overflow-x: auto;
+    scroll-behavior: smooth
+}
+.categories-scroll::-webkit-scrollbar {
+    display: none;            /* Chrome, Safari, Opera */
+}
+.categories-scroll .card {
+    min-width: 200px;
+    max-width: 250px;
+    cursor: pointer;
+}
+.sale{
+    padding-bottom: 5.6rem;
+    cursor: pointer;
+}
+.img-sale{
+    overflow: hidden;
+}
+.sale-c {
+    height: 625.33px;
+    transition: transform 1s ease-out;
+}
+.sale .text-card{
+    position: absolute;
+    left: 10%;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: white;
+}
+.sale span{
+    font-size:1.2rem ;
+    font-weight: 400;
+}
+.sale name-s{
+    font-size:2.4rem ;
+    font-weight: 500;
+    color: white;
+    transition: color 0.5s;
+}
+.sale .btn1{
+    align-self: flex-start;
+    border-radius: 999px;
+    font-size:0.9rem;
+    font-weight: 600;
+    padding:16px 40px;
+}
+.all-s:hover .sale-c{
+    transform: scale(1.2);
+}
+.name-s:hover {
+    color: rgb(200, 16, 46);
+}
+.Best-Seller{
+    padding-bottom:5.6rem ;
+}
+.Best-Seller h2{
+    font-size:2.8rem ;
+    font-weight:500;
+}
+.Best-Seller a{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: black;
+}
+.nav-b a:hover {
+    color: rgb(200, 16, 46);
+}
+.Best-Seller .card{
+border-radius: 0;
+min-width: 250px;
+transition: transform 0.3s ease;
+}
+.Best-Seller .name-b{
+    font-size:1rem;
+    font-weight: 400;
+    color: black;
+    transition: color 0.5s;
+}
+.name-b:hover{
+    color:rgb(200, 16, 46);
+}
+.Best-Seller .salary{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+}
+.old-sal{
+    color: rgb(172, 175,171);
+    text-decoration: line-through;
+}
+.Best-Seller{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+.Best-Seller-scroll{
+    overflow-x: auto;
+    scroll-behavior: smooth
+}
+.Best-Seller-scroll::-webkit-scrollbar{
+     display: none;            /* Chrome, Safari, Opera */
+}
+.Best-Seller-scroll .card{
+    min-height: 300px;
+    max-width: 400px;
+    cursor: pointer;
+}
+.img-all{
+    position: relative;
+    overflow: hidden;
+}
+.img-org{
+    position: absolute;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.img-hover{
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.img-all:hover .img-org{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.img-all:hover .img-hover{
+    opacity: 1;
+    transform: scale(1);
+
+}
+.icons{
+    position: absolute;
+    top:8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.icons button{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+}
+.icons img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like-btn {
+    border: none;
+    box-shadow: none;
+}
+.click {
+    filter: grayscale(100%) brightness(0.6);
+    transition: filter 0.3s ease;
+}
+.like-btn.active .click {
+    filter: invert(41%) sepia(89%) saturate(1685%) hue-rotate(320deg) brightness(94%) contrast(94%);
+}
+.eye{
+    width: 16px;
+    height: 16px;
+}
+
+.img-all:hover .icons{
+    opacity: 1;
+}
+.Best-Seller button.btn:hover{
+    background-color: black;
+}
+.icons button:hover img {
+    filter: invert(100%);
+}
+.shop{
+    flex: 1;
+    overflow-y: auto;
+    max-height: 100%;
+    border-left: 1px solid #e5e5e5;
+    align-self: stretch;
+    padding: 0 20px;
+}
+.offcanvas-header h2{
+font-size: 1.2rem;
+font-weight: 600;
+}
+.h21{
+    gap: 140px;
+    padding-top: 50px;
+}
+.shop h3{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.offcanvas-body{
+    display: flex;
+    height: 100%;
+}
+.offcanvas-body p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+}
+.sp{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: black;
+}
+.shop .sp1{
+    color:rgb(200, 16, 46) ;
+}
+.shop .product{
+    padding:30px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 16px;
+}
+.product:last-child {
+    border-bottom: none;
+}
+.img-p img{
+    width: 150px;
+    height: 150px;
+}
+.offcanvas.offcanvas-end {
+    width: 50%; 
+    max-width: none; 
+}
+.text{
+    padding: 40px 0 0 24px;
+}
+.shop .text{
+    display: flex;
+    flex-direction: column;
+}
+.clos .btn-close{
+    background-color: transparent;
+    box-shadow: none;
+    background-size: 10px;
+}
+.text h3,
+p,
+.text .numsal{
+    margin: 0;
+    padding: 0;
+}
+.img-p1{
+    padding: 24px;
+}
+.img-p1 img{
+    width: 200px;
+    height: 200px;
+}
+.text1{
+    padding: 24px;
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    background-color: #ffffff; 
+}
+.footer .nav-c li {
+    flex: 1; 
+    max-width: 100%;
+}
+.footer a{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    border: 1px solid black;
+    border-radius: 999px;
+    text-decoration: none;
+}
+.offcanvas-body p:hover{
+    color: rgb(200, 16, 46);
+}
+.nav-c a:hover{
+    background-color: black;
+    color: white;
+}
+.nav-c a:hover img{
+    filter: invert(100%);
+}
+.like-scroll{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    max-height: 100%;
+}
+.like-scroll::-webkit-scrollbar{
+     display: none;            /* Chrome, Safari, Opera */
+}
+.like-scroll .product1{
+    cursor: pointer;
+    z-index: 9999;
+}
+.spn{
+    padding-bottom: 0.5rem;
+}
+.progress-bar {
+    background-color: black;
+}
+.free{
+    padding: 16px 0;
+    font-size: 16px;
+}
+.free .sp1{
+    font-weight: 700;
+}
+.detils a{
+    padding: 12px 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.img-sm img{
+    width: 150px;
+    height: 150px;
+    
+}
+.product2 .btn-close{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    
+}
+.comp a{
+    padding: 15px 80px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 999px;
+    text-decoration: none;
+}
+.items{
+    flex: 1 1 50%;
+    background-color:#FAFAFA;
+}
+.img-sal{
+    flex: 1 1 50%;
+}
+.img-sal img{
+    width: 100%;
+    height: auto;
+}
+.On-sale{
+    padding-bottom: 112px;
+}
+.On-sale h2{
+    font-size: 56px;
+    font-weight:500 ;
+}
+.On-sale p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(95, 97, 94);
+}
+.On-sale .time span{
+font-size: 80px;
+font-weight: 400;
+}   
+.On-sale .time p{
+    font-size: 24px;
+    font-weight: 400;
+    color:black;
+    text-align: center;
+}
+.On-sale .get{
+    padding-top: 40px;
+}
+.On-sale .get a{
+    padding: 16px 60.11px 16px 30.5px;
+    border: 1px solid black;
+    border-radius: 999px;
+    text-decoration: none;
+}
+.On-sale .get img{
+    filter: invert(100%);
+}
+.GOld-Jewelery{
+    background-color:#FAF3F1 ;
+    padding-bottom: 112px;
+}
+.img-Gold{
+    padding: 100px 0;
+}
+.img-smal{
+    width: 124px;
+    height: 124px;
+    top: 12%;
+    left: 4%;
+}
+.info{
+    padding-top: 200px;
+    transition: color 0.8s;
+    cursor: pointer;
+}
+.info h2{
+transition: color 0.8s;
+}
+.info h2:hover{
+    color: rgb(200, 16, 46);
+}
+.Rating .star img{
+    width: 16px;
+    height: 16px;
+}
+.Rating .review{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(95, 97, 94);
+}
+.salay{
+    padding: 20px 0;
+}
+.salay .new-sal{
+    font-size: 40px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+.info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(95, 97, 94);
+    padding-bottom: 20px;
+}
+
+.color img{
+width: 40px;
+height: 40px;
+    border-radius: 50%;
+}
+.gold{
+    border: 1px solid black;
+    padding: 5px;
+}
+.incris{
+    width:180px;
+    height:56px;
+    padding:20px 20px;
+    border:1px solid #EDEDED;
+    border-radius:43px ;
+}
+.numofpro p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(95, 97, 94);
+}
+.GOld-Jewelery .icons1{
+    padding: 20px 20px;
+}
+.icons1 .icon1 button{
+    padding: 10px 150px;
+    border-radius: 43px;
+    font-display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+}
+.icon1 img{
+    filter: invert(100%);
+}
+.icon2 button{
+    border:2px solid #EDEDED;
+    border-radius: 50%;
+}
+
+.icon3 button{
+    border:2px solid #EDEDED;
+    border-radius: 50%;
+}
+.GOld-Jewelery button.btn:hover{
+    background-color: black;
+}
+.icons1 button:hover img {
+    filter: invert(100%);
+}
+.buy button{
+    width: 100%;
+    background-color: #C8102E;
+    border-radius: 999px;
+}
+@media (max-width: 1400px){
+.offcanvas.offcanvas-end {
+    width: 60%; 
+    max-width: none; 
+}
+.footer .nav-c li { 
+    max-width: 100%;
+}
+.nav-c a{
+    padding: 5px 10px;
+}
+.detils a{
+    padding: 5px 15px;
+}
+}
+@media (max-width: 1200px){
+.offcanvas.offcanvas-end {
+    width: 80%; 
+    max-width: none; 
+}
+.footer .nav-c li { 
+    max-width: 100%;
+}
+.nav-c a{
+    padding: 5px 15px;
+}
+.detils a{
+    padding: 5px 10px;
+}
+}
+@media (max-width: 992px){
+    .offcanvas.offcanvas-end {
+    width: 95%;  
+}
+.footer .nav-c li { 
+    max-width: 100%;
+}
+.nav-c a{
+    padding: 5px 15px;
+}
+.detils a{
+    padding: 5px 10px;
+}
+}
+@media (max-width: 768px){
+    .offcanvas.offcanvas-end {
+    width: 50%; 
+    max-width: none; 
+}
+    .categories-scroll .card {
+        min-width: 160px;
+        max-width: 180px;
+    }
+.categories-scroll .card img {
+        height: 150px;
+}
+.likh{
+        display: none !important;
+}
+.like{
+    display: none;
+    } 
+}
+@media (max-width: 576px){
+    .footer{
+        position: sticky;
+    }
+.like{
+    display: none;
+    } 
+    .likh{
+        display: none !important;
+    }
+}
+
