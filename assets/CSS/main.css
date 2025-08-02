@@ -1118,7 +1118,9 @@ justify-content: flex-start;
         padding: 40px 0;
 
     }
-
+.nav-icon{
+    display: none;
+}
 }
 @media (max-width: 576px){
 .footer{
