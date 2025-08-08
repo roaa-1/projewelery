@@ -72,7 +72,7 @@ header .offcanvas-body  {
     flex-shrink: 0 !important;
     white-space: nowrap !important;
 }
-.dropdown-menu a{
+header .dropdown-menu a{
     color: #000;
 }
 .offcanvas-header a{
